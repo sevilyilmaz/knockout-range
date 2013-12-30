@@ -3,8 +3,8 @@
  *
  * @author Sevil YILMAZ - @sevilyilmaz
  * @method numeric
- * @desc Highly inspired from knockoutjs numeric extension.
- {@link http://knockoutjs.com/documentation/extenders.html#live_example_1_forcing_input_to_be_numeric}
+ * @desc Provides natural numbers in a range.
+ {@link https://github.com/sevilyilmaz/knockout-range}
  * @param {} target
  * @param {object} options min and max values
  * @example
