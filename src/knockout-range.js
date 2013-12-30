@@ -3,7 +3,7 @@
  *
  * @author Sevil YILMAZ - @sevilyilmaz
  * @method numeric
- * @description Highly inspired from knockoutjs numeric extension
+ * @desc Highly inspired from knockoutjs numeric extension.
  {@link http://knockoutjs.com/documentation/extenders.html#live_example_1_forcing_input_to_be_numeric}
  * @param {} target
  * @param {object} options min and max values

@@ -1,0 +1,7 @@
+src_files:
+    - lib/**/*.js
+    - src/*.js
+    - spec/**/*_tests.js
+framework: jasmine
+launch_in_dev:
+- Chrome
