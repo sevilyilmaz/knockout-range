@@ -4,4 +4,4 @@ src_files:
     - spec/**/*_spec.js
 framework: jasmine
 launch_in_dev:
-- PhantomJS
+	- PhantomJS

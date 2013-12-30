@@ -14,8 +14,12 @@ describe("Knockout Range extension", function() {
       expect(instance).toBeDefined();
     });
 
-    it("should be integer", function() {
+    it("should be a number", function() {
       expect(typeof instance.getValue()).toBe('number');
+    });
+
+    it("should have default value of 5 for min value of 5", function() {
+      expect(instance.getValue()).toBe(5);
     });
 
     it("sets value that greater from max value to max value", function() {
