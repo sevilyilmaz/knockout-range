@@ -15,7 +15,7 @@ describe("Knockout Range extension", function() {
     });
 
     it("should be integer", function() {
-      expect(instance.getValue()).toMatch(/\d{1,}/);
+      expect(typeof instance.getValue()).toBe('number');
     });
 
     it("sets value that greater from max value to max value", function() {
