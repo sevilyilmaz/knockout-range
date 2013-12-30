@@ -10,8 +10,12 @@ describe("Knockout Range extension", function() {
       instance = new viewModel();
     });
     
-    it("viewModel exists",function(){
+    it("should find viewModel",function(){
       expect(instance).toBeDefined();
+    });
+
+    it("should be integer", function() {
+      expect(instance.getValue()).toMatch(/\d{1,}/);
     });
 
     it("sets value that greater from max value to max value", function() {
@@ -25,7 +29,12 @@ describe("Knockout Range extension", function() {
     });
 
     it("removes string and gives min value", function() {
-      instance.numericValue('')
+      instance.numericValue('lorem')
+      expect(instance.getValue()).toBe(5);
+    });
+
+    it("removes negative values and gives min value", function() {
+      instance.numericValue(-3)
       expect(instance.getValue()).toBe(5);
     });
 });
